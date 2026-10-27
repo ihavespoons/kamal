@@ -77,7 +77,7 @@ module Kamal::Utils
       matches += Array(items).select do |item|
         # Only allow * for a wildcard
         # items are roles or hosts
-        File.fnmatch(filter, item.to_s, File::FNM_EXTGLOB)
+        File.fnmatch(filter.gsub(/[?\[\]{}\\]/) { |character| "\\#{character}" }, item.to_s)
       end
     end
 
