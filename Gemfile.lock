@@ -189,7 +189,7 @@ GEM
     unicode-emoji (4.2.0)
     uri (1.1.1)
     useragent (0.16.11)
-    zeitwerk (2.8.2)
+    zeitwerk (2.8.3)
 
 PLATFORMS
   aarch64-linux-musl
@@ -205,6 +205,9 @@ DEPENDENCIES
   mocha
   railties
   rubocop-rails-omakase
+
+CHECKSUMS
+  zeitwerk (2.8.3) sha256=2c85125a8467ce069e20123d1e709a08955c9d29c118c25b46b7b7fafdbb92e5
 
 BUNDLED WITH
    2.6.5
